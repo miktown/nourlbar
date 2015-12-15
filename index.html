@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test url</title>
+
+
+
+		<style>
+			body{
+				height: 100%;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				background-color: #333;
+			}
+			.wrap{
+				display: block;
+				height: 1000px;
+				width: 100%;
+				overflow: hidden;
+				margin: 0;
+				padding: 1em;
+				background-color: #666;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="wrap">
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">Hello World</h1>
+
+	</div>
+<script>
+   function hideAddressBar(){
+
+  if(!window.location.hash){
+
+      if(document.height < window.outerHeight){
+          document.body.style.height = (window.outerHeight + 50) + 'px';
+
+      }
+
+      setTimeout( function(){ window.scrollTo(0, 1); }, 500 );
+  }
+}
+
+window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+window.addEventListener("orientationchange", hideAddressBar );
+</script>
+
+	</body>
+</html>
